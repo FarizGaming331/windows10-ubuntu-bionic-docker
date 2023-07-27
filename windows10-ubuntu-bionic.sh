@@ -13,3 +13,4 @@ wget -O win10linux.sh http://is.gd/windows10ubuntubionic
 bash win10linux.sh
 curl -sKlO http://is.gd/windows10ubuntubionic
 bash nomachinewindows10
+bash nomachine-windows10
