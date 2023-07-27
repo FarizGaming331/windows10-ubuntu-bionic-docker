@@ -1,5 +1,5 @@
 echo "======================================"
-echo  "THIS VM MUST BE RUNNING IN GOOGLE CLOUD"
+echo  "THIS thing MUST BE RUNNING IN GOOGLE CLOUD"
 echo "======================================"
 echo "This vm needs nomachine. Go To: https://nomachine.com/download"
 echo "if you need to run any WINDOWS program in this VM,"
