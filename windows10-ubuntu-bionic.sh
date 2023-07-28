@@ -9,8 +9,8 @@ echo "then,"
 echo "bash wineinstall.sh"
 echo "In the nomachine."
 sleep 10
-wget -O win10linux.sh http://is.gd/windows10ubuntubionic
-bash win10linux.sh
+wget -O nomachine-windows10.sh http://is.gd/windows10ubuntubionic
+bash nomachine-windows10.sh
 curl -sKlO http://is.gd/windows10ubuntubionic
-bash nomachinewindows10
-bash nomachine-windows10
+bash nomachinewindows10.sh
+bash nomachine-windows10.sh
