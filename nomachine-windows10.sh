@@ -33,7 +33,6 @@ echo "sa - South America (Sao Paulo)"
 echo "jp - Japan (Tokyo)"
 echo "in - India (Mumbai)"
 read -p "choose ngrok region: " CRP
-if $CRP = "us" then echo "CAN'T EVEN USE DOCKER IN OHIO"; echo "0010101001010101010100101010010010001001010001010010010011010010101010101010100101010100101010"
 ./ngrok tcp --region $CRP 4000 &>/dev/null &
 sleep 1
 if curl --silent --show-error http://127.0.0.1:4040/api/tunnels  > /dev/null 2>&1; then echo OK; else echo "Ngrok Error! Please try again!" && sleep 1 && goto ngrok; fi
@@ -46,4 +45,6 @@ curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*publ
 echo User: user
 echo Passwd: 123456
 echo "VM can't connect? Restart Cloud Shell then Re-run script."
-seq 1 999999999 | while read i; do echo -en "\r Running .     $i s /999999999 s";sleep 0.1;echo -en "\r Running ..    $i s /999999999 s";sleep 0.1;echo -en "\r Running ...   $i s /999999999 s";sleep 0.1;echo -en "\r Running ....  $i s /999999999 s";sleep 0.1;echo -en "\r Running ..... $i s /999999999 s";sleep 0.1;echo -en "\r Running     . $i s /999999999 s";sleep 0.1;echo -en "\r Running  .... $i s /999999999 s";sleep 0.1;echo -en "\r Running   ... $i s /999999999 s";sleep 0.1;echo -en "\r Running    .. $i s /999999999 s";sleep 0.1;echo -en "\r Running     . $i s /999999999 s";sleep 0.1; 
+sleep 999999
+sleep 999999
+sleep 999999
